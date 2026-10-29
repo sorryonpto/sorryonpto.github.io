@@ -242,3 +242,9 @@ section:not(.bg-green):not(.bg-navy) .quote{border-color:var(--line)}
 .tours-hero::after{background:linear-gradient(180deg,rgba(6,16,26,.3) 0%,rgba(6,16,26,.05) 30%,rgba(6,16,26,.5) 62%,rgba(6,16,26,.62) 100%)}
 .tours-hero .tag,.tours-hero .eyebrow{text-shadow:0 1px 14px rgba(0,0,0,.45)}
 .tb-promo-note{font-size:.88rem;color:rgba(255,255,255,.82);margin:.7rem 0 0}
+
+/* desktop nav fit (v6): keep every nav label on one line */
+.nav-desktop{flex-shrink:0}.nav-desktop a{white-space:nowrap}.header-cta{flex-shrink:0;white-space:nowrap}
+.nav-desktop ul{gap:1.15rem}
+@media (max-width:1220px){.nav-desktop{display:none}.nav-mobile{display:block}}
+@media (max-width:1360px) and (min-width:1221px){.nav-desktop ul{gap:.8rem}.nav-desktop a{letter-spacing:.12em}}
