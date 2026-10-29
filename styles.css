@@ -170,3 +170,71 @@ section:not(.bg-green):not(.bg-navy) .quote{border-color:var(--line)}
 .site-footer .small{color:rgba(255,255,255,.6)}
 .copy{border-top:1px solid rgba(255,255,255,.14);margin-top:3rem;padding-top:1.5rem}
 @media (max-width:700px){section{padding:4rem 0}body{font-size:1.02rem}}
+
+/* tours page + home tours banner (v5) */
+.nav-tours{color:var(--sea-d)!important}
+.home .site-header .nav-tours{color:#fff!important;border-bottom:1px solid var(--sea)}
+@media (max-width:1320px) and (min-width:1181px){.nav-desktop ul{gap:1.05rem}.nav-desktop a{letter-spacing:.14em}}
+.tours-hero{position:relative;min-height:min(92svh,860px);display:flex;align-items:flex-end;padding:0;color:#fff;background:var(--ink);overflow:hidden;isolation:isolate}
+.tours-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.tours-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,16,26,.35) 0%,rgba(6,16,26,.1) 35%,rgba(6,16,26,.78) 100%)}
+.tours-hero-in{padding:7rem 0 clamp(4rem,9vh,6rem)}
+.tours-hero h1{color:#fff;max-width:16ch;font-size:clamp(2.5rem,6vw,5rem);line-height:1.04;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.tours-hero .eyebrow{color:#fff;opacity:.92}
+.tours-hero .tag{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.2vw,1.5rem);color:#fff;max-width:34ch;margin-bottom:1.4rem}
+.photo-cap{position:absolute;right:clamp(1.25rem,4vw,3rem);bottom:clamp(1.2rem,3vw,2rem);margin:0;font-size:.66rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.promo-pill{display:inline-flex;align-items:center;gap:.7rem;margin:0;padding:.5rem 1rem .5rem .5rem;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.82rem;font-weight:600;letter-spacing:.04em;color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.promo-pill span{background:var(--sea);color:var(--ink);border-radius:999px;padding:.25rem .75rem;letter-spacing:.14em;font-size:.74rem}
+.offer-grid{display:grid;gap:clamp(2.5rem,6vw,5rem);align-items:center}
+@media (min-width:861px){.offer-grid{grid-template-columns:1.05fr .95fr}}
+.mini-steps{list-style:none;padding:0;margin:1.8rem 0 0}
+.mini-steps li{display:flex;gap:1.1rem;align-items:baseline;padding:.85rem 0;border-top:1px solid var(--line)}
+.mini-steps li>span:first-child{font-family:var(--serif);font-size:1.5rem;color:var(--sea-d);line-height:1;min-width:2.2rem}
+.promo-card{position:relative;background:var(--ink);color:rgba(255,255,255,.86);padding:clamp(2.2rem,5vw,3.4rem) clamp(1.6rem,4vw,3rem);text-align:center;box-shadow:0 30px 60px rgba(13,29,43,.22)}
+.promo-card::before{content:"";position:absolute;inset:10px;border:1px dashed rgba(141,183,180,.55);pointer-events:none}
+.promo-card .eyebrow{color:var(--sea)}
+.promo-pct{font-family:var(--serif);font-size:clamp(3.4rem,9vw,5.6rem);line-height:1;color:#fff;margin:0 0 .3rem}
+.promo-pct span{color:var(--sea)}
+.promo-line{font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#fff;margin-bottom:1.6rem}
+.promo-code{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.6rem;margin:0 auto 1rem;padding:.9rem 1rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);max-width:22rem}
+.promo-label{font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--sea)}
+.promo-code strong{font-family:var(--sans);font-size:1.6rem;letter-spacing:.24em;color:#fff}
+.copy-btn{font:600 .66rem var(--sans);letter-spacing:.18em;text-transform:uppercase;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6);padding:.45rem .8rem;cursor:pointer}
+.copy-btn:hover{background:#fff;color:var(--ink)}
+.promo-card .promo-date{color:rgba(255,255,255,.7);margin-bottom:1.6rem}
+.promo-card .btn{background:var(--sea);border-color:var(--sea);color:var(--ink);width:100%;max-width:22rem}
+.promo-card .btn:hover{background:#fff;border-color:#fff}
+.tiles-head{margin-bottom:clamp(2rem,4vw,3rem)}
+.tour-tiles{display:grid;gap:clamp(1rem,2vw,1.5rem)}
+@media (min-width:701px){.tour-tiles{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1101px){.tour-tiles{grid-template-columns:repeat(3,1fr)}}
+.tour-tile{position:relative;display:block;overflow:hidden;color:#fff;text-decoration:none;aspect-ratio:4/3;background:var(--ink)}
+.tour-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.tour-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,16,26,0) 30%,rgba(6,16,26,.55) 62%,rgba(6,16,26,.88) 100%)}
+.tt-title{text-shadow:0 1px 14px rgba(0,0,0,.35)}
+.tour-tile:hover img{transform:scale(1.04)}
+.tt-body{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:1.4rem 1.5rem}
+.tt-title{display:block;font-family:var(--serif);font-size:1.7rem;line-height:1.15;color:#fff}
+.tt-sub{display:block;font-size:.9rem;color:rgba(255,255,255,.85);margin-top:.3rem}
+.tour-tiles+.btn-row{margin-top:clamp(2.2rem,4vw,3rem)}
+.ticks-light li{border-color:rgba(255,255,255,.2)}
+.ticks-light li::before{background:var(--sea)}
+.credits{margin-top:3rem;font-size:.74rem}
+/* home banner */
+.tours-banner{padding:0;background:var(--ink);color:rgba(255,255,255,.86)}
+.tours-banner-in{display:grid;align-items:stretch}
+@media (min-width:861px){.tours-banner-in{grid-template-columns:1.1fr 1fr}}
+.tours-banner figure{position:relative;margin:0;min-height:320px}
+.tours-banner figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tours-banner figure figcaption{position:absolute;left:1rem;bottom:.7rem;margin:0;font-size:.6rem;color:rgba(255,255,255,.75)}
+.tours-banner .tb-copy{padding:clamp(3rem,7vw,5.5rem) clamp(1.25rem,5vw,4.5rem)}
+.tours-banner h2{color:#fff;max-width:15ch}
+.tours-banner .eyebrow{color:var(--sea)}
+.tours-banner .promo-pill{margin:.4rem 0 .2rem}
+.tours-banner .btn{background:#fff;color:var(--ink);border-color:#fff}
+.tours-banner .btn:hover{background:var(--sea);border-color:var(--sea)}
+.tours-banner .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}
+.tours-banner .btn-ghost:hover{background:#fff;color:var(--ink)}
+.is-expired{display:none!important}
+.site-footer .nav-tours{color:#fff!important}
+.site-footer .nav-tours:hover{color:var(--sea)!important}
